@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Students</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    
+
+
+}
+
+/* HEADER */
+.header{
+    background:#4f86a6;
+    height:120px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    border-bottom:2px solid black;
+}
+
+.header img{
+    position:absolute;
+    left:30px;
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    border:3px solid black;
+}
+
+.header h1{
+    font-size:60px;
+    margin:0;
+}
+
+/* LAYOUT */
+.container{
+    display:flex;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:200px;
+    background:#63c7c9;
+    padding-top:40px;
+    min-height:350px;
+    border-right:2px solid black;
+}
+
+.sidebar a{
+    display:block;
+    padding:20px;
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+    margin:15px;
+}
+
+.sidebar a.active{
+    background:#4f86a6;
+    color:white;
+    border-radius:15px;
+    text-align:center;
+}
+
+.sidebar a:hover{
+    background:#4f86a6;
+    color:white;
+    border-radius:15px;
+}
+
+/* CONTENT */
+.content{
+    flex:1;
+    background-image:url("Assets/bg.jpg");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    padding:40px;
+}
+
+.content::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(152, 195, 244, 0.418);
+}
+
+.student-box{
+    position:relative;
+    width:85%;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+.student-box h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid black;
+}
+
+th{
+    background:#4f86a6;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:10px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+/* FOOTER */
+.footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.footer img{
+   vertical-align:middle;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+}
+
+.footer span{
+    font-size:25px;
+    margin-left:10px;
+    font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+    <img src="Assets/profile.png">
+    <h1>City University</h1>
+</div>
+
+<div class="container">
+
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="students.html" class="active">Student</a>
+        <a href="result.html">Result</a>
+        <a href="notice.html">Notice</a>
+    </div>
+
+    <div class="content">
+
+        <div class="student-box">
+            <h2>Student Information</h2>
+
+            <table>
+                <tr>
+                    <th>Student Name</th>
+                    <th>ID</th>
+                    <th>Department</th>
+                    <th>Batch</th>
+                </tr>
+
+                <tr>
+                    <td>Rafikunnabi Piash</td>
+                    <td>5101016</td>
+                    <td>CSE</td>
+                    <td>58</td>
+                </tr>
+
+                <tr>
+                    <td>Md Yeamin</td>
+                    <td>5101017</td>
+                    <td>CSE</td>
+                    <td>59</td>
+                </tr>
+
+                <tr>
+                    <td>Mahmud Rana</td>
+                    <td>5101018</td>
+                    <td>CSE</td>
+                    <td>57</td>
+                </tr>
+
+                <tr>
+                    <td>Mizanur</td>
+                    <td>5101019</td>
+                    <td>CSE</td>
+                    <td>53</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer">
+    <img src="Assets/download.png">
+    <span>Rafikunnabi Piash || 0272130005101121</span>
+</div>
+
+</body>
+</html>
